@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.scaffold.auth.persistence.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.scaffold.auth.model.User" >
+    <id column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="account" property="account" jdbcType="VARCHAR" />
+    <result column="salt" property="salt" jdbcType="VARCHAR" />
+    <result column="user_code" property="userCode" jdbcType="VARCHAR" />
+    <result column="org_id" property="orgId" jdbcType="VARCHAR" />
+    <result column="sort" property="sort" jdbcType="INTEGER" />
+    <result column="state" property="state" jdbcType="CHAR" />
+    <result column="name_spell" property="nameSpell" jdbcType="VARCHAR" />
+    <result column="name_first_letter" property="nameFirstLetter" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="CHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="create_user_id" property="createUserId" jdbcType="VARCHAR" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="update_user_id" property="updateUserId" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.scaffold.auth.model.User" >
+    insert into `user` (`user_id`, `user_name`, `account`, 
+      `salt`, `user_code`, `org_id`, 
+      `sort`, `state`, `name_spell`, 
+      `name_first_letter`, `status`, `create_time`, 
+      `create_user_id`, `update_time`, `update_user_id`
+      )
+    values (#{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{account,jdbcType=VARCHAR}, 
+      #{salt,jdbcType=VARCHAR}, #{userCode,jdbcType=VARCHAR}, #{orgId,jdbcType=VARCHAR}, 
+      #{sort,jdbcType=INTEGER}, #{state,jdbcType=CHAR}, #{nameSpell,jdbcType=VARCHAR}, 
+      #{nameFirstLetter,jdbcType=VARCHAR}, #{status,jdbcType=CHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{createUserId,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{updateUserId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select `user_id`, `user_name`, `account`, `salt`, `user_code`, `org_id`, `sort`, 
+    `state`, `name_spell`, `name_first_letter`, `status`, `create_time`, `create_user_id`, 
+    `update_time`, `update_user_id`
+    from `user`
+    where `user_id` = #{userId,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select `user_id`, `user_name`, `account`, `salt`, `user_code`, `org_id`, `sort`, 
+    `state`, `name_spell`, `name_first_letter`, `status`, `create_time`, `create_user_id`, 
+    `update_time`, `update_user_id`
+    from `user`
+  </select>
+</mapper>
