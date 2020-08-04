@@ -1,0 +1,46 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.scaffold.common.config.properties.JedisProperties",
+      "name": "spring.jedis",
+      "type": "com.scaffold.common.config.properties.JedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.scaffold.common.config.properties.JedisProperties",
+      "name": "spring.jedis.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.scaffold.common.config.properties.JedisProperties",
+      "defaultValue": 0,
+      "name": "spring.jedis.max-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.scaffold.common.config.properties.JedisProperties",
+      "defaultValue": 0,
+      "name": "spring.jedis.max-total",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.scaffold.common.config.properties.JedisProperties",
+      "defaultValue": 0,
+      "name": "spring.jedis.max-wait-millis",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.scaffold.common.config.properties.JedisProperties",
+      "defaultValue": 0,
+      "name": "spring.jedis.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.scaffold.common.config.properties.JedisProperties",
+      "name": "spring.jedis.uri",
+      "type": "java.lang.String"
+    }
+  ]
+}
