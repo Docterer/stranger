@@ -42,14 +42,34 @@ public class ShiroConfig {
         return securityManager;
     }
 
+    /**
+     * 注入安全管理器
+     * @param securityManager
+     * @return
+     */
     public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager){
         //定义shiroFilterFactoryBean
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         //设置自定义的 securityManager
         shiroFilterFactoryBean.setSecurityManager(securityManager);
-        shiroFilterFactoryBean.setLoginUrl("/login");
+        //shiroFilterFactoryBean.setLoginUrl("/login");
 
         Map<String,String> filterChainMap = new LinkedHashMap<>();
-
+        filterChainMap.put("/swagger-*/**", "anon");
+        filterChainMap.put("/swagger-ui.html/**", "anon");
+        // 登录 URL 放行
+        filterChainMap.put("/login", "anon");
+        // 以“/user/admin” 开头的用户需要身份认证，authc 表示要进行身份认证
+        filterChainMap.put("/user/admin*", "authc");
+        // “/user/student” 开头的用户需要角色认证，是“admin”才允许
+        filterChainMap.put("/user/student*/**", "roles[admin]");
+        // “/user/teacher” 开头的用户需要权限认证，是“user:create”才允许
+        filterChainMap.put("/user/teacher*/**", "perms[\"user:create\"]");
+        // 配置 logout 过滤器
+        filterChainMap.put("/logout", "logout");
+        // 设置 shiroFilterFactoryBean 的 FilterChainDefinitionMap
+        shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainMap);
+        log.info("====shiroFilterFactoryBean注册完成====");
+        return shiroFilterFactoryBean;
     }
 }

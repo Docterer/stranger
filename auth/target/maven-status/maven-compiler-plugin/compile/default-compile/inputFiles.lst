@@ -1,0 +1,15 @@
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/controller/RoleController.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/persistence/PermissionMapper.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/model/Permission.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/model/Role.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/persistence/RolePermissionMapper.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/main/MainApplication.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/persistence/UserRoleMapper.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/model/RolePermission.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/persistence/UserMapper.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/model/User.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/config/shiro/ShiroConfig.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/service/RoleService.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/config/shiro/MyRealm.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/model/UserRole.java
+/Users/danyiran/Desktop/stranger/auth/src/main/java/com/scaffold/auth/persistence/RoleMapper.java

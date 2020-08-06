@@ -1,0 +1,42 @@
+server:
+  port: 1008
+spring:
+  servlet:
+    multipart:
+      # 最大支持文件大小
+      max-file-size: 100MB
+      # 最大支持请求大小
+      max-request-size: 100MB
+
+  application:     #应用程序
+    name: sofa-user
+  datasource:      # 数据库连接四大属性
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    #      driver-class-name: com.mysql.jdbc.Driver
+    type: org.apache.tomcat.jdbc.pool.DataSource  #要使用的连接池实现的完全限定名称。默认情况下，它是从类路径自动检测的。
+    druid:   #连接池
+      max-active: 20
+      initial-size: 1
+      min-idle: 3
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      filters: stat,wall,logback
+    cloud:
+      #spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
+      config:
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+      username: user
+      password: ${CONFIG_SERVER_PASSWORD:password}
+      retry:
+      initial-interval: 2000
+      max-interval: 10000
+      multiplier: 2
+      max-attempts: 10

@@ -1,0 +1,15 @@
+com/scaffold/auth/config/shiro/MyRealm.class
+com/scaffold/auth/persistence/RolePermissionMapper.class
+com/scaffold/auth/persistence/UserMapper.class
+com/scaffold/auth/persistence/RoleMapper.class
+com/scaffold/auth/model/Permission.class
+com/scaffold/auth/model/RolePermission.class
+com/scaffold/auth/service/RoleService.class
+com/scaffold/auth/config/shiro/ShiroConfig.class
+com/scaffold/auth/model/User.class
+com/scaffold/auth/controller/RoleController.class
+com/scaffold/auth/model/Role.class
+com/scaffold/auth/main/MainApplication.class
+com/scaffold/auth/persistence/UserRoleMapper.class
+com/scaffold/auth/persistence/PermissionMapper.class
+com/scaffold/auth/model/UserRole.class

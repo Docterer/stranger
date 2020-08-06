@@ -11,5 +11,15 @@
 
     <artifactId>auth</artifactId>
 
+    <properties>
+        <common.version>1.0.0-SNAPSHOT</common.version>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.scaffold</groupId>
+            <artifactId>common</artifactId>
+            <version>${common.version}</version>
+        </dependency>
+    </dependencies>
 </project>

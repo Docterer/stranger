@@ -1,10 +1,14 @@
 package com.scaffold.auth.persistence;
 
 import com.scaffold.auth.model.Role;
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 
+@Mapper
 public interface RoleMapper {
-    int insert(Role record);
+
+    int insertOrUpdate(Role record);
 
     Role selectByPrimaryKey(String roleId);
 
