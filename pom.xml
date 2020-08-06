@@ -34,7 +34,7 @@
         <akka.version>2.4.17</akka.version>
         <findbug.annotation.version>3.0.1u2</findbug.annotation.version>
         <powermock.version>1.6.5</powermock.version>
-        <quartz.scheduler.version>2.2.1</quartz.scheduler.version>
+        <quartz.scheduler.version>2.3.2</quartz.scheduler.version>
         <poi.version>3.16</poi.version>
         <h2database.version>1.4.195</h2database.version>
         <front.maven.plugin.version>1.5</front.maven.plugin.version>
