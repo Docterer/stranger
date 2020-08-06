@@ -5,7 +5,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.Arrays;
@@ -14,6 +16,7 @@ import java.util.Arrays;
  * @Author danyiran
  * @create 2020/8/5 13:16
  */
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @SpringBootApplication(scanBasePackages = "com.scaffold.auth")
 @MapperScan(basePackages = "com.scaffold.auth.persistence")
 public class MainApplication {

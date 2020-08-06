@@ -50,17 +50,6 @@
     </properties>
 
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>com.scaffold</groupId>-->
-            <!--<artifactId>common</artifactId>-->
-            <!--<version>${common.version}</version>-->
-        <!--</dependency>-->
-        <!-- mybatis-plus -->
-        <!--<dependency>-->
-            <!--<groupId>com.baomidou</groupId>-->
-            <!--<artifactId>mybatis-plus-boot-starter</artifactId>-->
-            <!--<version>2.3</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>commons-fileupload</groupId>
@@ -93,6 +82,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
             <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.2.7.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -133,18 +133,6 @@
             <version>${slf4j.version}</version>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.apache.logging.log4j</groupId>-->
-            <!--<artifactId>log4j-api</artifactId>-->
-            <!--<version>${log4j2.version}</version>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-            <!--<groupId>org.apache.logging.log4j</groupId>-->
-            <!--<artifactId>log4j-slf4j-impl</artifactId>-->
-            <!--<version>${log4j2.version}</version>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -174,12 +162,6 @@
             <artifactId>httpclient</artifactId>
             <version>${org.apache.http.version}</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>org.apache.httpcomponents</groupId>-->
-            <!--<artifactId>httpcore</artifactId>-->
-            <!--<version>${org.apache.http.version}</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -421,30 +403,11 @@
             <version>1.0.6</version>
         </dependency>
 
-        <!-- 华为云对象存储 OBS -->
-        <dependency>
-            <groupId>com.huaweicloud</groupId>
-            <artifactId>esdk-obs-java</artifactId>
-            <version>3.19.7</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.github.theborakompanioni</groupId>
-            <artifactId>thymeleaf-extras-shiro</artifactId>
-            <version>2.0.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-ehcache</artifactId>
-            <version>1.4.0</version>
-        </dependency>
-
         <!-- Quartz -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-quartz</artifactId>
-            <version>2.2.0.RELEASE</version>
+            <version>${spring.boot.version}</version>
         </dependency>
 
         <!-- jackson json 优化缓存对象序列化 -->
