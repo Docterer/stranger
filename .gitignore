@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 /target/
 !.mvn/wrapper/maven-wrapper.jar
+/logs/
 
 ### STS ###
 .apt_generated
@@ -16,6 +17,7 @@
 *.iws
 *.iml
 *.ipr
+*.lst
 
 ### NetBeans ###
 /nbproject/private/
