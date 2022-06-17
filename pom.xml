@@ -46,7 +46,7 @@
         <commons.pool2.version>2.4.2</commons.pool2.version>
         <commons.io.version>2.7</commons.io.version>
         <jcraft.version>0.1.53</jcraft.version>
-        <com.alibaba.fastjson.version>1.2.37</com.alibaba.fastjson.version>
+        <com.alibaba.fastjson.version>1.2.83</com.alibaba.fastjson.version>
     </properties>
 
     <dependencies>
