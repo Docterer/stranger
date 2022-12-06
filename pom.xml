@@ -42,7 +42,7 @@
         <springboot.activiti.version>6.0.0.RC1</springboot.activiti.version>
         <jpush.client.version>3.3.7</jpush.client.version>
         <redis.clients.version>2.9.0</redis.clients.version>
-        <commons.net.version>3.6</commons.net.version>
+        <commons.net.version>3.9.0</commons.net.version>
         <commons.pool2.version>2.4.2</commons.pool2.version>
         <commons.io.version>2.7</commons.io.version>
         <jcraft.version>0.1.53</jcraft.version>
@@ -347,7 +347,7 @@
         <dependency>
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
-            <version>3.6</version>
+            <version>3.9.0</version>
         </dependency>
 
         <dependency>
